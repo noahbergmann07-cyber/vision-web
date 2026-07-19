@@ -2392,21 +2392,23 @@ nav{
 
     justify-content:center;
 
-    width:45px;
+    width:50px;
 
-    height:45px;
+    height:42px;
 
-    border-radius:50%;
+    border-radius:14px;
 
-    background:rgba(255,255,255,.08);
+    background:rgba(255,255,255,.06);
 
     border:1px solid rgba(255,255,255,.15);
 
     color:white;
 
-    font-size:22px;
+    font-size:24px;
 
     cursor:pointer;
+
+    backdrop-filter:blur(20px);
 
 }
 
