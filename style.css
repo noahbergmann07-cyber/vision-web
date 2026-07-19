@@ -100,6 +100,8 @@ nav {
 
     z-index:9999;
 
+    transition:0.3s ease;
+
 
     box-shadow:
 0 30px 80px rgba(0,0,0,.55),
@@ -2439,6 +2441,16 @@ nav .button {
     .contactTrust span {
         display:none;
     }
+
+}
+
+nav.scrolled {
+
+    top:10px;
+
+    width:78%;
+
+    padding:12px 25px;
 
 }
 
