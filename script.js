@@ -64,8 +64,13 @@ const menuToggle = document.querySelector(".menuToggle");
 const navLinks = document.querySelector(".navLinks");
 
 
-menuToggle.addEventListener("click",()=>{
+if(menuToggle && navLinks){
 
-    navLinks.classList.toggle("active");
+    menuToggle.addEventListener("click",()=>{
 
-});
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+console.log("Menü Script geladen");
