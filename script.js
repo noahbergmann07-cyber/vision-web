@@ -29,18 +29,34 @@ const observer = new IntersectionObserver((entries) => {
 elements.forEach(element => {
     observer.observe(element);
 });
+const nav = document.querySelector("nav");
+
+let lastScroll = 0;
+
 window.addEventListener("scroll", () => {
 
-    const nav = document.querySelector("nav");
+    const currentScroll = window.pageYOffset;
 
-    if(window.scrollY > 50){
+    if(currentScroll <= 20){
 
-        nav.classList.add("scrolled");
+        nav.classList.remove("hide");
 
-    } else {
+        lastScroll = currentScroll;
 
-        nav.classList.remove("scrolled");
+        return;
 
     }
+
+    if(currentScroll > lastScroll){
+
+        nav.classList.add("hide");
+
+    }else{
+
+        nav.classList.remove("hide");
+
+    }
+
+    lastScroll = currentScroll;
 
 });
