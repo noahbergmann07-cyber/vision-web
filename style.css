@@ -2372,6 +2372,32 @@ nav .button {
     letter-spacing:4px;
 }
 
+.navContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+nav{
+    height:auto;
+}
+
+
+.menuToggle{
+    display:block;
+}
+
+
+.navLinks{
+    display:none;
+}
+
+
+.navLinks.active{
+    display:flex;
+}
+
 
     
 
@@ -2385,7 +2411,7 @@ nav .button {
     .hero {
     min-height:auto;
     display:block;
-    padding:200px 5% 80px;
+    padding:140px 5% 80px;
 }
 
 
