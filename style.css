@@ -2444,13 +2444,21 @@ nav .button {
 
 }
 
-nav.scrolled {
 
-    top:10px;
 
-    width:78%;
+nav{
 
-    padding:12px 25px;
+    transition:
+    transform .35s ease,
+    opacity .35s ease,
+    background .35s ease;
+
+}
+
+nav.hide{
+
+    transform:translate(-50%,-140%);
+    opacity:0;
 
 }
 
