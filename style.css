@@ -3934,3 +3934,126 @@ nav.scrolled {
     }
 
 }
+@media(max-width:900px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* NAVIGATION */
+
+    nav{
+        position:fixed;
+        top:15px;
+        left:50%;
+        transform:translateX(-50%);
+        width:94%;
+        padding:15px;
+        flex-direction:column;
+        gap:15px;
+        z-index:9999;
+    }
+
+
+    nav ul{
+        display:none;
+    }
+
+
+    nav .button{
+        width:100%;
+        text-align:center;
+        padding:14px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:auto;
+        padding:170px 20px 60px;
+        display:block;
+    }
+
+
+    .heroWrapper{
+        display:flex;
+        flex-direction:column;
+        gap:50px;
+    }
+
+
+    .heroContent{
+        width:100%;
+        text-align:center;
+    }
+
+
+    .premiumTag{
+        font-size:12px;
+        margin-bottom:20px;
+    }
+
+
+    .hero h1{
+        font-size:38px;
+        line-height:1.1;
+        letter-spacing:-1px;
+    }
+
+
+    .hero p{
+        font-size:16px;
+        line-height:26px;
+    }
+
+
+    .heroButtons{
+        width:100%;
+        flex-direction:column;
+    }
+
+
+    .heroButton,
+    .secondaryButton{
+        width:100%;
+    }
+
+
+
+    /* MOCKUP */
+
+    .heroVisual{
+        width:100%;
+        transform:none;
+    }
+
+
+    .heroMockup{
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+
+
+    .heroMockup img{
+        width:100%;
+    }
+
+
+    .floatingCard{
+        display:none;
+    }
+
+
+
+    /* STATS */
+
+    .trustStats{
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+    }
+
+}
