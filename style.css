@@ -2679,17 +2679,32 @@ nav{
 
 
     .heroContent {
-        text-align:center;
-    }
+
+    text-align:center;
+
+    width:100%;
+
+}
 
 
     .hero h1 {
-        font-size:42px;
-        line-height:1.1;
-        letter-spacing:-2px;
-        text-shadow:
-0 10px 40px rgba(0,0,0,.35);
-    }
+
+    font-size:38px;
+
+    line-height:1.12;
+
+    letter-spacing:-1.5px;
+
+    text-align:center;
+
+    max-width:420px;
+
+    margin:0 auto;
+
+    text-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+
+}
 
 
     .hero p {
@@ -2735,30 +2750,52 @@ nav{
 
 
     .results,
-    .trust,
-    .strategy,
-    .about,
-    .why,
-    .process,
-    .portfolio,
-    .benefits,
-    .pricing,
-    .contact {
-        padding:90px 5%;
-    }
+.trust,
+.strategy,
+.about,
+.why,
+.process,
+.portfolio,
+.benefits,
+.pricing,
+.contact {
+
+    padding:80px 20px;
+
+}
 
 
     .resultGrid,
-    .trustGrid,
-    .strategyGrid,
-    .aboutGrid,
-    .cards,
-    .steps,
-    .projects,
-    .benefitGrid,
-    .pricingCards {
-        grid-template-columns:1fr;
-    }
+.trustGrid,
+.strategyGrid,
+.aboutGrid,
+.cards,
+.steps,
+.projects,
+.benefitGrid,
+.pricingCards {
+
+    grid-template-columns:1fr;
+
+    width:100%;
+
+}
+
+
+.resultBox,
+.trustItem,
+.strategyGrid > div,
+.aboutBox,
+.card,
+.project,
+.benefit,
+.priceCard {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
 
 
     .featured {
@@ -3650,4 +3687,156 @@ nav.hide{
 
 }
 
+@media (max-width:900px){
 
+    img {
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .strategyGrid,
+    .steps,
+    .cards,
+    .benefitGrid,
+    .resultGrid,
+    .trustGrid,
+    .projects,
+    .pricingCards {
+
+        display:grid;
+        grid-template-columns:1fr !important;
+        width:100%;
+        gap:25px;
+
+    }
+
+
+    .strategyGrid > div,
+    .step,
+    .card,
+    .benefit,
+    .resultBox,
+    .trustItem,
+    .project,
+    .priceCard {
+
+        width:100% !important;
+        max-width:100%;
+        box-sizing:border-box;
+
+    }
+
+
+    .heroWrapper {
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+
+    .heroVisual {
+
+        width:100%;
+        display:flex;
+        justify-content:center;
+
+    }
+
+
+    .heroMockup {
+
+        width:100%;
+    }
+
+
+    .heroMockup img {
+
+        width:100%;
+        height:auto;
+
+    }
+
+}
+
+/* FINAL MOBILE FIX VISION WEB */
+
+@media(max-width:900px){
+
+    .steps,
+    .cards,
+    .benefitGrid,
+    .projects,
+    .pricingCards,
+    .resultGrid,
+    .trustGrid,
+    .strategyGrid,
+    .aboutGrid {
+
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        width:100% !important;
+        gap:25px !important;
+
+    }
+
+
+    .step,
+    .card,
+    .benefit,
+    .project,
+    .priceCard,
+    .resultBox,
+    .trustItem,
+    .strategyGrid > div,
+    .aboutBox {
+
+        width:100% !important;
+        max-width:100% !important;
+
+    }
+
+
+    .process,
+    .benefits,
+    .why,
+    .about,
+    .portfolio,
+    .pricing,
+    .strategy,
+    .results,
+    .trust {
+
+        padding-left:20px !important;
+        padding-right:20px !important;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:38px !important;
+        line-height:1.15 !important;
+
+    }
+
+
+    .heroVisual {
+
+        margin-top:40px;
+
+    }
+
+
+}
+.benefit {
+    opacity:1 !important;
+    transform:none !important;
+}
