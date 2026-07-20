@@ -2642,9 +2642,38 @@ nav{
 
     flex-direction:column;
 
-    align-items:center;
+    width:100%;
 
     gap:50px;
+
+}
+
+
+.heroVisual {
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.heroMockup {
+
+    width:100%;
+
+    max-width:420px;
+
+}
+
+
+.heroMockup img {
+
+    width:100%;
+
+    height:auto;
 
 }
 
@@ -3571,5 +3600,54 @@ nav.hide{
 
 }
 
+@media (max-width:900px){
+
+    .strategyGrid {
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        width:100%;
+
+        gap:25px;
+
+    }
+
+
+    .strategyGrid > div {
+
+        width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .steps {
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        width:100%;
+
+    }
+
+
+    .step {
+
+        width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+}
 
 
