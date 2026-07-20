@@ -3840,3 +3840,35 @@ nav.hide{
     opacity:1 !important;
     transform:none !important;
 }
+
+@media(max-width:900px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    section,
+    .heroWrapper,
+    .heroContent,
+    .heroVisual,
+    .container{
+        width:100% !important;
+        max-width:100% !important;
+        box-sizing:border-box;
+    }
+
+
+    .heroWrapper{
+        padding:0;
+    }
+
+
+    .heroVisual{
+        margin-left:0 !important;
+        margin-right:0 !important;
+        transform:none !important;
+    }
+
+
+}
