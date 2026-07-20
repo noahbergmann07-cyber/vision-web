@@ -68,9 +68,21 @@ if(menuToggle && navLinks){
 
     menuToggle.addEventListener("click",()=>{
 
-        navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    menuToggle.classList.toggle("active");
+
+});
+
+}
+document.querySelectorAll(".navLinks a").forEach(link => {
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+        menuToggle.classList.remove("active");
 
     });
 
-}
-console.log("Menü Script geladen");
+});
