@@ -2727,9 +2727,10 @@ nav{
 
 
     .heroVisual {
-        width:100%;
-        transform:none;
-    }
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+}
 
 
     .heroMockup {
