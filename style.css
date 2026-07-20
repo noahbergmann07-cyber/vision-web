@@ -3872,3 +3872,44 @@ nav.hide{
 
 
 }
+@media(max-width:900px){
+
+html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.hero,
+.heroWrapper,
+.heroContent,
+.heroVisual,
+section{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.heroVisual{
+    overflow:hidden;
+}
+
+.heroMockup{
+    width:100% !important;
+    max-width:420px;
+}
+
+.heroMockup img{
+    width:100% !important;
+    max-width:100% !important;
+    height:auto;
+}
+
+.floatingCard{
+    display:none !important;
+}
+
+}
